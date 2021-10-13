@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Checklist</title>
+</head>
+<body>
+    <h1 style="text-align: center">Food Cart</h1>
+        <div style="text-align: center">
+          <select id="fruit">
+            <option value="orange">Orange</option>
+            <option value="apple">Apple</option>
+            <option value="Pears">Pears</option>
+            <option value="Mango">Mango</option>
+          </select><br><br>
+          <select id="meat">
+            <option value="chicken">chicken</option>
+            <option value="beef">beef</option>
+            <option value="mutton">mutton</option>
+            <option value="fish">fish</option>
+          </select><br><br>
+          <select id="Soft-Drinks">
+            <option value="Option1">Option1</option>
+            <option value="Option2">Option2</option>
+            <option value="Option3">Option3</option>
+            <option value="Option4">Option4</option>
+          </select><br><br>
+          <button onclick="myfunction()">Submit</button>
+          <script>
+            function myfunction(){
+                var fruit = document.getElementById("fruit").value
+                var meat = document.getElementById("meat").value
+                var sd = document.getElementById("Soft-Drinks").value
+                const cart = [fruit, meat, sd];
+                console.log(cart)
+
+                
+
+            }
+    
+          </script>
+        </div>
+</body>
+           
+
+</html>
